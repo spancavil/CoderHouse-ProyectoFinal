@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+    <title>Organizador de tareas</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="column">
+          <h2 class="titulo" style="text-align: center;"> Organizador de tareas</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column">
+          <h3>Ingrese el número de tareas: </h3>
+        </div>
+        <div id="ingresoNumeroTareas" class="column">
+          <input type="text" id="inputCantidadTareas" placeholder="1 - 99" onkeypress="pulsar(event);">
+          <h6 id = "mensajeError1" mostrar style="display: none;">Error! Ingrese una cantidad de tareas válida</h6>
+          <button id="button1">Aceptar</button>
+        </div>
+      </div>    
+    </div>
+
+    <div class = "row" id="listaTareas">
+      <div class="column column-20">
+        <h3 style="text-align: center; display: none;" id="textoIngresarListado">Ingresar listado de tareas:</h3>
+      </div>
+      <div class="column column-50 column-offset-10" style="text-align: center;">
+        <table class="tabla" id= "tablaPadre" style="display:none">
+          <header class="header">
+            <td>Descripción</td>
+            <td>Tiempo (minutos)</td>
+          </header>
+          <tbody>
+            <!--Se completa dinámicamente-->
+          </tbody>
+        </table>  
+      </div>
+      <div class="column-20">
+        <button id="buttonSendAll" style="display: none;">ENVIAR TODO</button>
+      </div>
+    </div>
+
+    <div class="row" id="salidaListaTareas" style="text-align: center;">
+      <div class="column">
+        <!--Se completa dinámicanente-->
+      </div>
+    </div>
+    <iframe src="sound/beep.mp3" controls style="display: none;">
+    </iframe>
+    <!-- SCRIPTS JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="js\Tarea.js"></script>
+    <script src="js\main.js"></script>
+  </body>
+</html>
