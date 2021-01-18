@@ -10,6 +10,9 @@ button {
     transition-duration: 0.4s; /** Agregamos una transición cuando se pare en el botón**/
 }
 
+input {
+    color:rgba(230, 212, 235, 0.897)
+}
 ::placeholder {
     color: rgb(223, 179, 179);
 }   
