@@ -1,0 +1,15 @@
+body {
+    background-color: #4267B2;
+    color: white;
+    transition: background-color ease-in 3s;
+}
+
+button {
+    background-color: rgba(0, 0, 126, 0.61);
+    color: #0e6dc0;
+    transition-duration: 0.4s; /** Agregamos una transición cuando se pare en el botón**/
+}
+
+::placeholder {
+    color: rgb(223, 179, 179);
+}   
